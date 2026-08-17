@@ -1,4 +1,4 @@
-🚦 Traffic Signal Optimization Simulator
+# 🚦 Traffic Signal Optimization Simulator
 
 A MATLAB-based traffic management simulation that dynamically selects traffic signals based on traffic density and provides priority to simulated emergency vehicles.
 
@@ -209,6 +209,10 @@ The current simulation assumes approximately:
 
 The system also ensures that it never removes more vehicles than are actually waiting.
 
+A mid-run cycle under normal priority, with South selected as the busiest direction:
+
+![Simulation Running](screenshots/simulation.png)
+
 ---
 
 ### 7. Live Dashboard
@@ -225,6 +229,10 @@ The MATLAB dashboard displays:
 * Emergency events
 * Traffic-density graph
 * Final performance
+
+**Full dashboard view** — all four panels (Traffic Density, Live Intersection, Signal Status, Performance) shown together:
+
+![Dashboard Overview](screenshots/dashboard.png)
 
 ---
 
@@ -258,6 +266,10 @@ NEEDS IMPROVEMENT
 ```
 
 based on clearance rate and average waiting traffic.
+
+Final report at the end of a 15-cycle run, showing clearance rate, average waiting, and overall performance grade:
+
+![Final Results](screenshots/results.png)
 
 ---
 
@@ -350,7 +362,7 @@ The dashboard will begin the 15-cycle simulation.
 ## 🔬 Simulation Parameters
 
 | Parameter               |            Value |
-| ----------------------- | ---------------: |
+| ------------------------ | ---------------: |
 | Initial North Traffic   |               25 |
 | Initial South Traffic   |               18 |
 | Initial East Traffic    |               10 |
